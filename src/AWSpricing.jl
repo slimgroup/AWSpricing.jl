@@ -1,9 +1,11 @@
 module AWSpricing
 using JSON
+using Printf
 
 global AWSpricing_path
 global AWSidx
 global EC2idx
+global EC2products
 
 # defaults
 region="us-east-1"
