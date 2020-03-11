@@ -16,7 +16,7 @@ function __init__()
     try
         dummy=haskey(AWSidx,"publicationDate")
     catch
-        println("Parsing AWS offers ...")
+        println("Parsing AWS offers index ...")
         global AWSidx=JSON.Parser.parsefile(offer_path)
         println("... done")
     end
@@ -28,7 +28,7 @@ function __init__()
     if isfile(ec2_path)
         println("EC2 pricing index ready")
     else
-        println("Downloading EC2 pricing index  ...")
+        println("Downloading EC2 pricing index ...")
         download(ec2_url,ec2_path)
         println("... done")
     end
