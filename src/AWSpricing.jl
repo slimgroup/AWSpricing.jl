@@ -6,6 +6,7 @@ global AWSpricing_path
 global AWSidx
 global EC2idx
 global EC2products
+global EC2terms
 
 # defaults
 region="us-east-1"
